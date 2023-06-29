@@ -1,0 +1,8 @@
+<p>todo-form works!</p>
+
+<h2>Add/Update Todo</h2>
+
+<form [formGroup]="todoForm" (ngSubmit)="saveTodo()">
+  <input type="text" formControlName="title" placeholder="Title" />
+  <button type="submit">Save</button>
+</form>
