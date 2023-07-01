@@ -1,0 +1,8 @@
+<p>todo-list works!</p>
+
+<h2>Todo List</h2>
+
+<div *ngFor="let todo of todos">
+  <span>{{ todo.title }}</span>
+  <button (click)="deleteTodo(todo.id)">Delete</button>
+</div>

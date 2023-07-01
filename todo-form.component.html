@@ -1,0 +1,15 @@
+<h2>Add/Update Todo</h2>
+
+<form [formGroup]="todoForm" (ngSubmit)="saveTodo()">
+  <input type="text" formControlName="title" placeholder="Title" />
+  <br><br>
+  <button class="btn btn-primary">Submit</button>
+</form>
+<table>
+  <tr>
+   <b> <td>Title</td></b>
+  </tr>
+  <tr *ngFor="let x of title">
+    <td>{{ x }}</td>
+  </tr>
+</table>
